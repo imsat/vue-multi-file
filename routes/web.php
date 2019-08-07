@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post('/images-upload', 'ImagesController@imagesUpload')->name('images.upload');
+Route::resource('/files', 'FileController');
