@@ -10,7 +10,6 @@ class ImagesController extends Controller
     {
         if(count($request->images)){
             foreach($request->images as $image){
-                return $image;
                 $image->store('images');
             }
         }
