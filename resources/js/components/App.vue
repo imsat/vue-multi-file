@@ -3,6 +3,16 @@
         <div class="row justify-content-center my-2">
             <div class="col-md-9">
                 <div class="card">
+                    <div class="card-header">Select Page</div>
+                    <div class="card-body">
+                        <select-page></select-page>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center my-2">
+            <div class="col-md-9">
+                <div class="card">
                     <div class="card-header">Multiple File Uploader</div>
                     <div class="card-body">
                         <file-uploader></file-uploader>
@@ -27,10 +37,12 @@
 <script>
     import ImageUploader from './ImageUploader';
     import FileUploader from './FileUploader';
+    import SelectPage from './SelectPage';
     export default {
         components: {
             ImageUploader,
-            FileUploader
+            FileUploader,
+            SelectPage
         }
     }
 </script>
